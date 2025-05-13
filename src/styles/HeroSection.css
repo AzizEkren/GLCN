@@ -1,0 +1,273 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-top: 100px;
+  margin-top: 0;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color) 0%, rgba(74, 109, 167, 0.8) 100%);
+  clip-path: polygon(0 0, 70% 0, 40% 100%, 0% 100%);
+  z-index: 1;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 80%;
+  height: 200%;
+  background: var(--secondary-color);
+  opacity: 0.1;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  padding: 60px 40px 40px 40px;
+  color: #fff;
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(248, 164, 92, 0.3);
+  margin-top: 20px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+  display: inline-block;
+  background: #fff;
+  color: var(--primary-color);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  width: fit-content;
+  transition: transform 0.3s ease;
+}
+
+.contact-link-container:hover {
+  transform: translateX(5px);
+}
+
+.contact-info-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.contact-arrow {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.contact-link-container:hover .contact-arrow {
+  transform: translateX(3px);
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .hero-section::before {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 60%);
+  }
+  
+  .hero-text {
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* İletişim bilgisi kısmı için yeni tasarım */
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-button {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(248, 164, 92, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #e6863c;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(248, 164, 92, 0.4);
+}
+
+.contact-note {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  display: inline-block;
+  max-width: 230px;
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .hero-section::before {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 60%);
+  }
+  
+  .hero-text {
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-info-container {
+    justify-content: center;
+  }
+  
+  .contact-note {
+    text-align: center;
+  }
+}

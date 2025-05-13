@@ -1,0 +1,217 @@
+/* Services Section */
+.services-section {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 10% 10%, rgba(74, 109, 167, 0.05) 0%, transparent 30%),
+              radial-gradient(circle at 90% 90%, rgba(248, 164, 92, 0.05) 0%, transparent 30%);
+  z-index: -1;
+}
+
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 36px;
+  color: #4a6da7;
+  position: relative;
+}
+
+.services-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #f8a45c;
+  border-radius: 2px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 sütun olarak değiştirildi */
+  gap: 30px;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #4a6da7;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+/* Detayları İncele butonu */
+.details-button {
+  background-color: #f8a45c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.details-button:hover {
+  background-color: #4a6da7;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Stili */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #4a6da7;
+  cursor: pointer;
+  line-height: 0.8;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  z-index: 10;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  padding: 30px 30px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-icon {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+.modal-header h3 {
+  font-size: 24px;
+  color: #4a6da7;
+  margin: 0;
+}
+
+.modal-body {
+  padding: 20px 30px 30px;
+}
+
+.modal-body p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet için 2 sütun */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Mobil için 1 sütun */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    padding: 25px;
+  }
+  
+  .service-icon {
+    font-size: 40px;
+  }
+  
+  .modal-content {
+    width: 95%;
+  }
+  
+  .modal-header {
+    padding: 20px 20px 10px;
+  }
+  
+  .modal-body {
+    padding: 15px 20px 20px;
+  }
+}

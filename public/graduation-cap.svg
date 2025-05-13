@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle (optional) -->
+  <circle cx="256" cy="256" r="256" fill="#3B5378"/>
+  
+  <!-- Graduation cap base -->
+  <path d="M256 140L76 220L256 300L436 220L256 140Z" fill="#F8A45C"/>
+  
+  <!-- Graduation cap top -->
+  <path d="M256 300V380C256 380 176 350 136 330V240L256 300Z" fill="#F8A45C"/>
+  
+  <!-- Graduation cap tassel -->
+  <path d="M136 240V330C136 336 142 340 148 340C154 340 160 336 160 330V240H136Z" fill="#F8A45C"/>
+  
+  <!-- Graduation cap top center -->
+  <circle cx="256" cy="140" r="20" fill="#F8A45C"/>
+</svg> 

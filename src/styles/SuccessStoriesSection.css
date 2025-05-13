@@ -1,0 +1,118 @@
+/* Success Stories */
+.success-section {
+  padding: 80px 0;
+  background-color: #f5f7fa;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.success-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to bottom right, #ffffff 49%, transparent 51%);
+}
+
+.success-section h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 36px;
+  color: #4a6da7;
+  position: relative;
+}
+
+.success-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #f8a45c;
+  border-radius: 2px;
+}
+
+.success-stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.story-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.story-card::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 100px;
+  color: rgba(74, 109, 167, 0.1);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.story-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.story-card h3 {
+  color: #4a6da7;
+  font-size: 22px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.story-card p {
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.story-result {
+  display: inline-block;
+  background-color: #4a6da7;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .success-stories {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .story-card {
+    padding: 25px;
+  }
+  
+  .story-card::before {
+    font-size: 80px;
+  }
+} 
