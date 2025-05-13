@@ -14,13 +14,6 @@ const ContactSection = () => {
           
           <div className="contact-cards-container">
             <div className="contact-card">
-              <div className="contact-icon">📞</div>
-              <h3>Telefon</h3>
-              <p>+90 543 810 30 93</p>
-              <a href="tel:+90543 810 30 93" className="contact-button">Ara</a>
-            </div>
-            
-            <div className="contact-card">
               <div className="contact-icon">📧</div>
               <h3>E-posta</h3>
               <p>glcnn27@gmail.com</p>
@@ -34,7 +27,6 @@ const ContactSection = () => {
               <a href="https://www.instagram.com/egitimkocum.gulcinhoca/" target="_blank" rel="noopener noreferrer" className="contact-button">Profili Görüntüle</a>
             </div>
           </div>
-          
           
         </div>
       </div>

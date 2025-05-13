@@ -5,7 +5,7 @@ const SuccessStoriesSection = () => {
   const successStories = [
     {
       name: "Aziz E.",
-      testimonial: "Gülçin hocayla tanışmadan öcne, yani ilk senemde 214bin sıralama yapmıştım.Gülçin hocayla tanışmak benim için büyük bir şans oldu.Ders çalışma teknikleri,deneme analizleri ve en önemlisi samimi gösterdiği ilginin sıralamamı 80bine çekmemde çok büyük katkısı oldu.Teşekkürler Gülçin Hocam. ",
+      testimonial: "Gülçin hocayla tanışmadan önce, yani ilk senemde 214bin sıralama yapmıştım.Gülçin hocayla tanışmak benim için büyük bir şans oldu.Ders çalışma teknikleri,deneme analizleri ve en önemlisi samimi gösterdiği ilginin sıralamamı 80bine çekmemde çok büyük katkısı oldu.Teşekkürler Gülçin Hocam. ",
       result: "Süleyman Demirel Uni,Bilgisayar Mühendisliği"
     },
     {
