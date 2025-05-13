@@ -191,16 +191,39 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section::before {
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    opacity: 0.8;
+  }
+  
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin: 0 15px;
+  }
+  
   .hero-text h1 {
     font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
   
   .hero-subtitle {
     font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
   }
   
   .hero-description {
     font-size: 1rem;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-info-text {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   }
   
   .cta-button {
@@ -248,10 +271,6 @@
   .hero-content {
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-  
-  .hero-section::before {
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 60%);
   }
   
   .hero-text {

@@ -39,7 +39,7 @@ const SuccessStoriesSection = () => {
   return (
     <section id="basarilar" className="success-section">
       <div className="content-container">
-        <h2>Başarılarımız</h2>
+        <h2>Başarılar</h2>
         <div className="success-stories">
           {successStories.map((story, index) => (
             <div className="story-card" key={index}>
