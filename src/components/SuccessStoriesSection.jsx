@@ -20,7 +20,7 @@ const SuccessStoriesSection = () => {
     },
     {
       name: "İkra K.",
-      testimonial: "Gülçin Hoca bu yolculukta yanımda olduğu için ne kadar teşekkür etsem az.Desteği ve yönlendirmeleri sayesinde YKS’de ilk 10000’e girdim ve hayalini kurduğum tıp fakültesini kazandım. Özellikle son üç ayda beraber oluşturduğumuz çalışma planı, hem sınav sürecine bakış açımı değiştirdi hem de kendime olan güvenimi yeniden kazanmamı sağladı. Beni her zaman anlayan, motive eden ve elimden tutan bir rehber oldu. Sadece bir hoca değil, bu zorlu dönemde bana moral olan, yolumu aydınlatan gerçek bir destekçi. Emekleri ve inancı için sonsuz teşekkür ederim.",
+      testimonial: "YKS’ye ilk girdiğimde 64 bin sıralamadaydım ama hedefim tıp fakültesiydi. Gülçin Hocam’ın desteğiyle hem çalışma düzenimi oturttum hem de kendime olan güvenimi kazandım. Özellikle son üç ayda uyguladığımız plan sayesinde sıralamamı 10 bine çektim. Bu süreçte doğru rehberlikle çok şeyin değişebileceğini gördüm.",
       result: "İstanbul Aydın Uni,Tıp(%100 Burslu)"
     },
     {
