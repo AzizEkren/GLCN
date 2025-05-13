@@ -1,98 +1,97 @@
 /* About Section */
 .about-section {
-  padding: 80px 0;
-  background-color: #f5f7fa;
-  position: relative;
+  background: #f8f9fa;
+  padding: 100px 0;
   width: 100%;
-}
-
-.about-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background: linear-gradient(to top left, #ffffff 49%, transparent 51%);
 }
 
 .about-section h2 {
   text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
   margin-bottom: 60px;
-  font-size: 36px;
-  color: #4a6da7;
   position: relative;
+  font-weight: 700;
 }
 
-.about-section h2::after {
+.about-section h2:after {
   content: '';
   position: absolute;
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
-  height: 4px;
-  background-color: #f8a45c;
-  border-radius: 2px;
+  height: 3px;
+  background: var(--secondary-color);
 }
 
 .about-content {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 300px 1fr;
   gap: 50px;
-  width: 100%;
-  max-width: var(--container-width);
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  padding: 0 20px;
+  align-items: center;
 }
 
 .about-image {
-  flex: 1;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-image {
   width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s;
-  object-fit: cover;
-  height: 400px;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-image:hover {
-  transform: scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-.about-text {
-  flex: 1;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .about-text p {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 1.05rem;
   line-height: 1.8;
+  color: #555;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
   .about-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   
-  .about-image, .about-text {
-    width: 100%;
-  }
-  
-  .about-text {
-    margin-top: 30px;
+  .about-image {
+    margin-bottom: 20px;
   }
   
   .profile-image {
-    height: 300px;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .about-content {
+    gap: 30px;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
   }
 } 
