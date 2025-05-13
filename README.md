@@ -1,12 +1,35 @@
-# React + Vite
+# Gülçin Hoca - Educational Coaching & Consulting Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive and modern web application built using **React** for Gülçin Hoca, a dedicated educator offering personalized coaching and consulting services for students preparing for YKS (university entrance exam) and LGS (high school entrance exam) in Turkey.
+## 🌐 Live Demo
 
-Currently, two official plugins are available:
+👉 [Visit the Website](https://glcn.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎓 Overview of services offered (YKS, LGS coaching & educational consulting)
+- 📅 Contact and appointment section
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 🧠 Animated transitions and smooth navigation
+- 🖼️ Media-rich sections (images, embedded videos)
+- 📌 Navigation bar with working internal links
+- 🔗 Social media links
+- ©️ Footer with copyright
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  ## 📦 Tech Stack
+
+- **React** (with hooks and functional components)
+- **React Router DOM** for page navigation
+- **Tailwind CSS** (or custom CSS) for styling
+- **Framer Motion** for animations (optional)
+
+
+## 🛠️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AzizEkren/GLCN
+
+cd gulcinkocluk
+npm install
+npm start
